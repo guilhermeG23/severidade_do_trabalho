@@ -1,0 +1,783 @@
+{
+    "titulo": "Caracterização da severidade do risco ergonômico - Fatores Ambientais",
+    "subtitulo": ["Perigos possíveis", "Perigo ou fator de risco ergonômico"],
+    "chave_base": "CategorizacaoFatoresAmbientais",
+    "todas_questoes" : [{
+            "desc": ["Leiaute do posto de trabalho", "Observação do profissional de SST sobre as características do posto de trabalho:"],
+            "questoes": [
+                {
+                    "id": "1_1",
+                    "questao": ["O posto de trabalho é improvisado?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_2",
+                    "questao": ["O posto de trabalho não foi planejado e/ou adaptado para a posição preferencial da tarefa?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_3",
+                    "questao": ["O posto de trabalho não permite alternância de postura?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_4",
+                    "questao": ["O posto de trabalho não foi planejado e/ou adaptado para a posição sentada?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_5",
+                    "questao": ["Os equipamentos ou mobiliários não são adaptados à antropometria do trabalhador?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_6",
+                    "questao": ["No posto de trabalho, existe sistema de comunicação com a supervisão, se necessário?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_7",
+                    "questao": ["O posto de trabalho é desorganizado?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_8",
+                    "questao": ["O posto de trabalho é sujo?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_9",
+                    "questao": ["O posto de trabalho necessita de limpeza frequente?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_10",
+                    "questao": ["O posto de trabalho apresenta ligações e/ou fiações elétricas irregulares, fios pelo chão e soltos e/ou está próximo à painéis elétricos?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_11",
+                    "questao": ["No posto de trabalho, o trabalhador fica exposto às variações climáticas, como variações de temperatutal, exposição solar, vento, descargas eletricas e/ou chuva?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_12",
+                    "questao": ["O trabalhador tem fácil acesso aos sanitários, bebedouros e áreas de descanso, caso possua?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_13",
+                    "questao": ["O local do posto de trabalho tem sistema de ventilação ou outro tecnologia que promova o conforto térmico?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_14",
+                    "questao": ["As condições estruturais das edificação em que se encontra o posto de trabalho foram projetadas e construídas conforme as normas técnicas?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_15",
+                    "questao": ["No posto de trabalho são respeitadas as áreas de circulação de veículos e pessoas?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_16",
+                    "questao": ["A sinalização de segurança foi projetada e executada de forma correta no posto de trabalho?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        },{
+            "desc": ["Mobiliário", "Avaliação do profissional de SST:"],
+            "questoes": [
+                {
+                    "id": "2_17",
+                    "questao": ["Os mobiliários não atende às características antropométricas do trabalhador?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_18",
+                    "questao": ["Os mobiliários ou equipamentos não tem espaço para movimentação dos segmentos corporais?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_19",
+                    "questao": ["Os mobiliários do posto de trabalho possuem ajustes de fácil manipulação?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_20",
+                    "questao": ["O trabalhador tem necessidade de alcançar objetos, documentos, controles ou qualquer ponto fora das zonas de alcance ideais para as características antropométricas do trabalhador?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_21",
+                    "questao": ["O mobiliário permite a alternância de postura do trabalhador, quando necessário?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_22",
+                    "questao": ["O mobiliário permite que o trabalhador sente, se for possível, para a execução da sua atividade?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_23",
+                    "questao": ["A altura e as características da superfície de trabalho é compatível com a atividade?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_24",
+                    "questao": ["A superfície de trabalho possui quinas vivas ou rebarbas?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_25",
+                    "questao": ["Existe apoio para pés sempre que o trabalhador não puder manter a planta dos pés completamente apoiada no piso?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_26",
+                    "questao": [" Os pedais e demais comandos para acionamento pelos pés possuem posição e dimensões que possibilitem fácil alcance pelo trabalhador?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_27",
+                    "questao": ["O assento de trabalho possui ajustes de altura, apoio de antebraço, ajustes de altura e inclinação do encosto?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_28",
+                    "questao": ["O assento possui 5 pés, borda frontal arredondada e superfícies de contato corporal estofadas e revestidas de material que permite a respiração?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_29",
+                    "questao": ["A cadeira de trabalho tem assento e encosto para apoio lombar, com estofamento de densidade adequada, ajustáveis à estatura do trabalhador e à natureza da tarefa?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_30",
+                    "questao": ["Os assentos apresentam sinais de uso intenso ou deterioração? "],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_31",
+                    "questao": ["O encosto do assento é inadequado ou ausente?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_32",
+                    "questao": ["A bancada de trabalho tem ajustes de altura e inclinação, se necessário?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_33",
+                    "questao": ["A bancada de trabalho possui dimensões adequadas às características do trabalhador e da atividade?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_34",
+                    "questao": ["Existe suporte para documentos que facilitam a visualização e leitura pelo trabalhador?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_35",
+                    "questao": ["Os materiais de construção dos mobiliários são possuem cores, texturas e formatos apropriados ao trabalhador e à atividade?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_36",
+                    "questao": ["Os mobiliários permitem fácil limpeza e higienização?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "2_37",
+                    "questao": ["Em caso de posto de trabalho informatizado, o monitor, teclado e mouse estão em bom estado e atendem às necessidades do trabalhador?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Ferramentas e equipamentos ", "Pergunte ao trabalhador:"],
+            "questoes": [
+                {
+                    "id": "3_1",
+                    "questao": ["A norma atende às especificações da Norma Regulamentadora nº 12, em vigor?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_2",
+                    "questao": ["A instalação da máquina foi realizada conforme instruções do fabricante e/ou conforme instruções do departamento competente da empresa?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_3",
+                    "questao": ["A máquina recebe manutenção preventiva programada?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_4",
+                    "questao": ["Os equipamentos e/ou máquinas não possuem meios de regulagem de ajuste ou estes estão sem condições de uso?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_5",
+                    "questao": ["Existe algum equipamento, máquina ou ferramenta que ainda não se encontra disponível, mas que poderia ajudar no trabalho? "],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_6",
+                    "questao": ["Há manuseio de ferramentas e/ou objetos pesados por períodos prolongados?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_7",
+                    "questao": ["Os monitores de vídeo, sinais e/ou controles das máquinas e equipamentos apresentam interação fácil, clara e precisa?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_8",
+                    "questao": ["A localização e o posicionamento do painel de controle e dos comandos facilitam o acesso, o manejo fácil e seguro e a visibilidade da informação do processo?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_9",
+                    "questao": ["Os equipamentos utilizados no processamento eletrônico de dados com terminais de vídeo permitem ao trabalhador ajustá-lo de acordo com as tarefas a serem executadas? "],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_10",
+                    "questao": [" Nas atividades com uso de computador portátil de forma não eventual em posto de trabalho foram previstas formas de adaptação do teclado, do mouse ou da tela a fim de permitir o ajuste às características antropométricas do trabalhador e à natureza das tarefas a serem executadas?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_11",
+                    "questao": ["Os equipamentos e ferramentas manuais, cujos pesos e utilização na execução das tarefas possam causar efeitos adversos à saúde do trabalhador, foram dotados de dispositivo de sustentação?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_12",
+                    "questao": ["As ferramentas manuais possuem características que facilitam o uso e o manuseio e evitam a compressão da palma da mão ou de um ou mais dedos em arestas ou quinas vivas?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_13",
+                    "questao": ["A empunhadura das ferramentas manuais são apropriadas à tarefa e ao eventual uso de luvas?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_14",
+                    "questao": ["O manual da máquina está disponível no posto de trabalho?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_15",
+                    "questao": ["Nas máquinas móveis que possuem rodízios, há pelo menos dois deles com travas?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_16",
+                    "questao": ["Os dispositivos de partida, acionamento e parada estão localizados na zona de alcance do trabalhador e em local que impeça o acionamento acidental?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_17",
+                    "questao": ["Os sistemas de segurança foram projetados e instalados de forma que a atividade possa ser executada com segurança, conforto e bom posicionamento?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_18",
+                    "questao": ["O trabalhador recebeu treinamento específico para trabalhar com a máquina/equipamento?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "3_19",
+                    "questao": ["Os trabalhadores manuseiam ou alimentam manualmente linhas ou equipamentos vibratórios com regularidade?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Iluminação", "Avalie o ambiente de trabalho e responda:"],
+            "questoes": [
+                {
+                    "id": "4_1",
+                    "questao": ["A iluminação da área da tarefa é insuficiente?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "4_2",
+                    "questao": ["A iluminação é irregular ou não uniforme no ambiente de trabalho?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "4_3",
+                    "questao": ["A iluminação da área da tarefa é excessiva?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "4_4",
+                    "questao": ["As áreas de trabalho e as partes de equipamentos estão bem iluminadas de modo a permitir aos trabalhadores a percepção de possíveis riscos ou perigos visíveis?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "4_5",
+                    "questao": ["Os equipamentos possuem condições de mobilidade suficiente para permitir o ajuste da tela do equipamento à iluminação do ambiente, protegendo-a contra reflexos, e proporcionar corretos ângulos de visibilidade ao trabalhador?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "4_6",
+                    "questao": ["O sistema de iluminação atende às necessidades dos trabalhadores mais idosos e/ou com necessidades especiais?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "4_7",
+                    "questao": ["As áreas de trabalho estão livres de sombras?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "4_8",
+                    "questao": ["As superfícies de trabalho, incluindo telas ou monitores, estão livres de ofuscamento?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "4_9",
+                    "questao": ["As lâmpadas com algum problema são substituídas de imediato?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "4_10",
+                    "questao": ["Os sistemas de iluminação de emergência estão operando de forma adequada?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "4_11",
+                    "questao": ["Os trabalhadores foram orientados a relatar irregularidades observadas no sistema de iluminação que possam ocasionar acidentes, problemas na atividade ou na produção?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "4_12",
+                    "questao": ["Existem medições regulares dos níveis de iluminância?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Exposição a agentes ambientais", "Através dos laudos de insalubridade, avalie as condições dos agentes ambientais no posto de trabalho (quando houver avaliação quantitativa):", "Observação:", "LT: Limite de Tolelância (2)","NA: Nível de Ação (1)","S.I.: Sem informação (2)","N/A: Não aplicavél (0)"],
+            "questoes": [
+                {
+                    "id": "5_1",
+                    "questao": ["Ruído"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_2",
+                    "questao": ["Frio"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_3",
+                    "questao": ["Vibração"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_4",
+                    "questao": ["Radiações Ionizantes"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_5",
+                    "questao": ["Calor"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_6",
+                    "questao": ["Trabalho em condições hiperbáricas"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_7",
+                    "questao": ["Umidade"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_8",
+                    "questao": ["Poeiras mineirais"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_9",
+                    "questao": ["Fumos metálicos"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_10",
+                    "questao": ["Neblinas, névoas, gases, vapores"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_11",
+                    "questao": ["Substâncias, compostos ou produtos químicos em geral"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_12",
+                    "questao": ["Agentes biológicos"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_13",
+                    "questao": ["Radiações não-ionizantes"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_14",
+                    "questao": ["Substâncias, compostos ou produtos químicos em geral"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_15",
+                    "questao": ["Outros: campo para escrever"],
+                    "respostas": [["2", "LT"], ["1", "NA"], ["2", "S.I"], ["0", "N/A"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_16",
+                    "questao": ["O trabalhador está exposto à condição de periculosidade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_17",
+                    "questao": ["O trabalhador está exposto à condição de periculosidade e de insalubridade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Equipamentos de Proteção Individual (EPIs)", "Avaliação do profissional de SST:"],
+            "questoes": [
+                {
+                    "id": "5_1",
+                    "questao": ["Os EPIs são oferecidos gratuitamente, estão em perfeito estado e são adequados aos riscos da atividade e à antropometria do trabalhador?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_2",
+                    "questao": ["Os EPIs dificultam a visão do trabalhador?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_3",
+                    "questao": ["Os EPIs dificultam os movimentos ou a postura do trabalhador?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_4",
+                    "questao": ["Os EPIs dificultam a execução da atividade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_5",
+                    "questao": ["Os EPIs são considerados pesados e desconfortáveis?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_6",
+                    "questao": ["As luvas utilizadas pelo trabalhador são inadequadas (desconfortáveis, muito finas, tamanho errado, por exemplo)?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_7",
+                    "questao": ["A empresa monitora e avalia a eficácia dos EPIs nesta atividade?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_8",
+                    "questao": ["A empresa realiza a higienização e manutenção periódica dos EPIs?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "5_9",
+                    "questao": ["A empresa realiza treinamentos para uso adequado dos EPIs?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }
+    ]
+}

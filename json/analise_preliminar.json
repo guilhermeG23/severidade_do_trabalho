@@ -1,0 +1,211 @@
+{
+    "titulo": "Análise Ergonômica Preliminar",
+    "subtitulo": [""],
+    "chave_base": "analisePreliminar",
+    "todas_questoes" : [{
+            "desc": ["Informações"],
+            "questoes": [
+                {
+                    "id": "1_1",
+                    "questao": ["EMPRESA - CNPJ"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "",
+                    "placeholder": "000.000.000-0000/00"
+                },
+                {
+                    "id": "1_2",
+                    "questao": ["RAZÃO SOCIAL"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_3",
+                    "questao": ["DATA"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "date",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_4",
+                    "questao": ["UNIDADE/PLANTA"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_5",
+                    "questao": ["SETOR"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_6",
+                    "questao": ["CARGO"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_7",
+                    "questao": ["FUNÇÃO"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_8",
+                    "questao": ["NÚMERO TOTAL DE FUNCIONÁRIOS NO POSTO DE TRABALHO"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_9",
+                    "questao": ["ANALISTA RESPONSÁVEL - documento - RG, CPF, CREA"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_10",
+                    "questao": ["POSTO DE TRABALHO "],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_11",
+                    "questao": ["DESCRIÇÃO DO POSTO DE TRABALHO", "(BREVE DESCRIÇÃO DO AMBIENTE)"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_12",
+                    "questao": ["ATIVIDADES DESENVOLVIDAS "],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "10",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_13",
+                    "questao": ["ATIVIDADE: (CAMPO PARA NOME)"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "required",
+                    "tipo_campo": "text",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_14",
+                    "questao": ["DESCRIÇÃO DA ATIVIDADE:", "(PASSO A PASSO CONFORME ENTENDIMENTO DA TAREFA)"],
+                    "respostas": [],
+                    "ajuda": ["Perigos associados (frequencia, severidade e grau de risco/ação)", "Consequências potenciais", "Sugestão de melhoria ergonômica (controles recomendados)"],
+                    "obrigatorio": "",
+                    "tipo_campo": "",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_15",
+                    "questao": ["ATIVIDADE: (CAMPO PARA NOME)", " É o mesmo posto de trabalho? Se não, campo Posto de Trabalho e Atividade"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": "",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_16",
+                    "questao": ["DESCRIÇÃO DA ATIVIDADE: (PASSO A PASSO CONFORME ENTENDIMENTO DA TAREFA)"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": "",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_17",
+                    "questao": ["FOTOS (ESPAÇO)"],
+                    "respostas": [],
+                    "ajuda": ["Perigos associados (frequencia, severidade e grau de risco/ação)", "Consequências potenciais", "Sugestão de melhoria ergonômica (controles recomendados)"],
+                    "obrigatorio": "",
+                    "tipo_campo": "file",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_18",
+                    "questao": ["ATIVIDADE: (CAMPO PARA NOME)", " É o mesmo posto de trabalho? Se não, campo Posto de Trabalho e Atividade"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": "",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_19",
+                    "questao": ["DESCRIÇÃO DA ATIVIDADE: (PASSO A PASSO CONFORME ENTENDIMENTO DA TAREFA)"],
+                    "respostas": [],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": "",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                },
+                {
+                    "id": "1_20",
+                    "questao": ["FOTOS (ESPAÇO)"],
+                    "respostas": [],
+                    "ajuda": ["Perigos associados (frequencia, severidade e grau de risco/ação)", "Consequências potenciais", "Sugestão de melhoria ergonômica (controles recomendados)"],
+                    "obrigatorio": "",
+                    "tipo_campo": "file",
+                    "Qtd_campos": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ]
+}
