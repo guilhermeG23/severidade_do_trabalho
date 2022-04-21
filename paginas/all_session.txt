@@ -1,0 +1,12 @@
+//All sessions
+$_SESSION['success_cadastro']
+$_SESSION['erro_cadastro']
+$_SESSION['id_user']
+$_SESSION['usuario_banco']
+$_SESSION['senha_banco']
+$_SESSION['limite']
+$_SESSION["id_formulario_preliminar"]
+$_SESSION["cnpj_empresa"]
+$_SESSION["razao_empresa"]
+$_SESSION["registro_trabalho"]
+
