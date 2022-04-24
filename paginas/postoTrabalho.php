@@ -21,6 +21,28 @@ if (!empty($_SESSION['id_user']) && !empty($_SESSION['usuario_banco']) && !empty
     header("Location: ./logout.php");
     die();
 }
+
+
+if (isset($_POST['deletar_formulario'])) {
+    if (mysqli_num_rows(mysqli_query($conexao_banco, "select * from registro_total where id_formulario_preliminar = '{$_POST['id_formulario_preliminar']}' and registro_trabalho = '{$_POST['registro_trabalho']}' limit 1;")) > 0) {
+        $imagemRegistrada = mysqli_fetch_array(mysqli_query($conexao_banco, "select * from registro_total where id_formulario_preliminar = '{$_POST['id_formulario_preliminar']}' and registro_trabalho = '{$_POST['registro_trabalho']}' limit 1;"));
+        if (mysqli_query($conexao_banco, "delete from registro_total where id_formulario_preliminar = '{$_POST['id_formulario_preliminar']}' and registro_trabalho = '{$_POST['registro_trabalho']}' limit 1;")) {
+            unlink($imagemRegistrada['id_image_preliminar']);
+            $_SESSION['success_cadastro'] = "Registro de atividade: '{$_POST['registro_trabalho']}' deletado com sucesso";
+            header('Location: ./postoTrabalho.php');
+            die();
+        } else  {
+            $_SESSION['error_delete'] = "Registro de atividade: '{$_POST['registro_trabalho']}' não pode ser deletado";
+            header('Location: ./postoTrabalho.php');
+            die();
+        }
+    } else {
+        $_SESSION['error_delete'] = "Não a registros sobre a atividade: '{$_POST['registro_trabalho']}' para serem deletados";
+        header('Location: ./postoTrabalho.php');
+        die();
+    }
+}
+
 ?>
 
 <html lang="pt-br">
@@ -154,6 +176,7 @@ if (!empty($_SESSION['id_user']) && !empty($_SESSION['usuario_banco']) && !empty
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <form class="d-flex">
                 <a class='dropdown-item' href='./perfil.php'><img src='../imagens/user.png' class='img'/></a>
+                <a class='dropdown-item' href='./perfil.php'><img src='../imagens/todos-registros.png' class='img'/></a>
                 <a class='dropdown-item' data-bs-toggle="modal" data-bs-target="#menuModalHelp"><img src='../imagens/help.png' class='img'/></a>
                 <a class='dropdown-item' href='./logout.php'><img src='../imagens/logout.png' class='img'/></a>
             </form>
@@ -185,6 +208,15 @@ if (!empty($_SESSION['id_user']) && !empty($_SESSION['usuario_banco']) && !empty
     <?php
     }
     unset($_SESSION['success_cadastro']);
+    ?>
+
+    <?php if (!empty($_SESSION['error_delete'])) { ?>
+        <div class="alert alert-danger" role="alert">
+            <p><?=$_SESSION['error_delete']?>
+        </div>
+    <?php
+    }
+    unset($_SESSION['error_delete']);
     ?>
 
 <?php
@@ -245,6 +277,7 @@ if ($qtd_registros_preliminar > 0) {
             echo "</div>";
             echo "<div>";
             echo "<form action='./postoTrabalho.php' method='POST'>";
+            echo "<input type='hidden' id='deletar_formulario' name='deletar_formulario'>";
             echo "<input type='hidden' id='id_formulario_preliminar' name='id_formulario_preliminar' value='{$_SESSION['id_formulario_preliminar']}' />";
             echo "<input type='hidden' id='cnpj_empresa' name='cnpj_empresa' value='{$_SESSION['cnpj_empresa']}' />";
             echo "<input type='hidden' id='razao_empresa' name='razao_empresa' value='{$_SESSION['razao_empresa']}' />";
@@ -252,6 +285,9 @@ if ($qtd_registros_preliminar > 0) {
             echo "<button type='submit' class='btn-margin-bk'><img src='../imagens/delete.png' alt='deletar'/></button>";
             echo "</form>";
             echo "</div>";
+            if (mysqli_num_rows(mysqli_query($conexao_banco, "select id_formulario_preliminar from registro_total where id_formulario_preliminar = '{$_SESSION['id_formulario_preliminar']}' and registro_trabalho = '{$registros[$trabalho]}' limit 1;")) > 0) {
+                echo "<img src='../imagens/registro-certo.png' class='img' alt='registro existe'/>";
+            }
             echo "</div>";
             echo "</th>";
             echo "</tr>";

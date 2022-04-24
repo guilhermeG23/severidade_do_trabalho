@@ -3,8 +3,129 @@
 session_start();
 header("Cache-Control: no-cache, must-revalidate");
 require_once("../banco/banco.php");
-require_once("../chamadas/head_geral.php");
+?>
 
+<html lang="pt-br">
+<head>
+	<title>Registros</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+	<meta Http-Equiv="Cache-Control" Content="no-cache">  
+	<meta Http-Equiv="Pragma" Content="no-cache">  
+	<meta Http-Equiv="Expires" Content="0">
+	<link rel="shortcut icon" href="" type="image/x-icon">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/cssPessoal.css">
+    <style>
+        p {
+            margin-bottom: 0rem !important;
+        }
+        img {
+            width: 32px;
+            height: 32px;
+        }
+        .dropdown-item.active, .dropdown-item:active {
+            background-color: transparent !important;
+        }
+        button.dropdown-item:hover {
+            background-color: transparent !important;    
+        }
+        a.dropdown-item:hover {
+            background-color: transparent !important;
+        }
+        .menu-ajuste-nav {
+            border-bottom: 1px solid black;
+        }
+        .footer-nav-formulario {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid black;
+        }
+        .footer-nav {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid black;
+        }
+        .caixa-login {
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .ajuste-input-login {
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        .ajuste-center-nav {
+            margin: auto;
+        }
+        .ajuste-left-nav {
+            margin: auto;
+            margin-left: 0px;
+        }
+        .ajuste-link-login {
+            width: 100%;
+            margin-top: 10px;
+            display: inline-flex;
+        }
+        .ajuste-margin-login-link {
+            margin: auto;
+            text-align: center;
+        }
+        .container {
+            margin-bottom: 10% !important;
+        }
+        .class-perguntas {
+            display: flex;
+        }
+        .pergunta {
+            margin-right: auto;
+            margin-bottom: 10px !important;
+        }
+        .icones-pergunta {
+            margin-left: auto;
+            padding: 4px;
+        }
+        .caixa-titulo {
+            margin-top: 10px;
+            /*margin-bottom: 40px;*/
+        }
+        .espacamento-img-table {
+            margin-right: 10px;
+        }
+        .div-table-buttons {
+            display: inline-flex;
+        }
+        .btn-margin-bk {
+            background: transparent !important;
+            border: 0px solid transparent;
+        }
+        .btn-enable-disable-field {
+            margin-left: 10px;
+            width: 36px;
+        }
+        @media only screen and (max-width: 991px) {
+            .dropdown-item {
+                text-align: center;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                margin-bottom: 120px !important;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<?php
 $_error_msg = "";
 
 if (!empty($_POST['usuario']) && !empty($_POST['password'])) {
@@ -30,7 +151,7 @@ if (!empty($_POST['usuario']) && !empty($_POST['password'])) {
             $_SESSION['usuario_banco'] = $usuario_banco;
             $_SESSION['senha_banco'] = $senha_banco;
             $_SESSION['limite'] = date_timestamp_get(date_create()) + 3600;
-            header("Location: ./formulario.php");
+            header("Location: ./perfil.php");
             die();
         }
     } else {
@@ -39,33 +160,30 @@ if (!empty($_POST['usuario']) && !empty($_POST['password'])) {
 }
 
 if (empty($_SESSION['entrar'])) {
-    echo "<body>";
-    echo "<div class='container'>";
-    echo "<div class='caixa-login'>";
-    echo "<form action='./' method='POST'>";
-    echo "<input type='text'/ id='usuario' name='usuario' class='form-control ajuste-input-login' placeholder='Usuário' required>";
-    echo "<input type='password' id='password' name='password' class='form-control ajuste-input-login' placeholder='Senha' required/>";
-    echo "<button type='submit' class='btn btn-primary form-control'>Entrar</button>";
-    echo "</form>";
-    echo "<div class='ajuste-link-login'>";
-    echo "<div class='ajuste-margin-login-link'>";
-    echo "<a href='./resetPassword.php'>Recuperar senha</a>";
-    echo "</div>";
-    echo "<div class='ajuste-margin-login-link'>";
-    echo "<a href='./novoUsuario.php'>Se cadastrar</a>";    
-    echo "</div>";
-    echo "</div>";
-    echo "</div>";
-    if (!empty($_error_msg)) {
-        ?>
+    ?>
+    <div class='container'>
+    <div class='caixa-login'>
+    <form action='./' method='POST'>
+    <input type='text' id='usuario' name='usuario' class='form-control ajuste-input-login' placeholder='Usuário' required>
+    <input type='password' id='password' name='password' class='form-control ajuste-input-login' placeholder='Senha' required/>
+    <button type='submit' class='btn btn-primary form-control'>Entrar</button>
+    </form>
+    <div class='ajuste-link-login'>
+    <div class='ajuste-margin-login-link'>
+    <a href='./resetPassword.php'>Recuperar senha</a>
+    </div>
+    <div class='ajuste-margin-login-link'>
+    <a href='./novoUsuario.php'>Se cadastrar</a> 
+    </div>
+    </div>
+    </div>
+    <?php if (!empty($_error_msg)) { ?>
         <br>
         <div class="alert alert-danger" role="alert">
             <?=$_error_msg?>
         </div>
-        <?php
-    }
+    <?php } ?>
 
-?>
     <nav class="navbar navbar-expand-lg navbar-light bg-light footer-nav">
         <div class="container-fluid">
             <p class="navbar-brand ajuste-center-nav">Nome do software</p>

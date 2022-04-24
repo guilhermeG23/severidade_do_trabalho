@@ -1,5 +1,5 @@
 <?php
 #phpinfo();
-header("Location: paginas/");
+header("Location: ./paginas/");
 die();
 ?>

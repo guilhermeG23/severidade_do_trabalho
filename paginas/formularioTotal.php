@@ -151,6 +151,21 @@ Note: Falta fazer
             }
         }
 
+
+
+        @media print {
+            .navbar.navbar-expand-lg.navbar-light.bg-light.menu-ajuste-nav {
+                display: none;
+            }
+            .navbar.navbar-expand-lg.navbar-light.bg-light.footer-nav-formulario {
+                display: none;
+            }
+            .esconderNoPrint {
+                display: none;    
+            }
+        }
+            
+
     </style>
 </head>
 <body>
@@ -185,6 +200,8 @@ Note: Falta fazer
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <form class="d-flex">
                 <a class='dropdown-item' href='./perfil.php'><img src='../imagens/user.png' class='img'/></a>
+                <a class='dropdown-item' href='./postoTrabalho.php'><img src='../imagens/posto-trabalho.png' class='img'/></a>
+                <a class='dropdown-item' href='#' onclick="imprimirFormulario()" id="imprimirFormulario" style="display:none;"><img src='../imagens/impressora.png' class='img'/></a>
                 <a class='dropdown-item' data-bs-toggle="modal" data-bs-target="#menuModalHelp"><img src='../imagens/help.png' class='img'/></a>
                 <a class='dropdown-item' href='./logout.php'><img src='../imagens/logout.png' class='img'/></a>
             </form>
@@ -236,28 +253,31 @@ if (isset($_POST['registro_trabalho']) && !empty($_POST['registro_trabalho'])) {
 
 <div class='container box'>
 
-        <?php if (!empty($_SESSION['erro_cadastro'])) { ?>
-            <div class="alert alert-danger" role="alert" id="mensagem_erro_cadastro">
-                <p><?=$_SESSION['erro_cadastro']?>
-            </div>
-        <?php
-        }
-        unset($_SESSION['erro_cadastro']);
-        ?>
-
-        <div class="alert alert-secondary" role="alert">
-            <h4>Informações adicionais do registro</h4>
-            <hr>
-            <p>Formulário #<?=$_SESSION['id_formulario_preliminar']?></p>
-            <p>Empresa: <?=$_SESSION['razao_empresa']?></p>
-            <p>CNPJ: <?=$_SESSION['cnpj_empresa']?></p>
-            <p>Registro de trabalho(atividade): <?=$_SESSION['registro_trabalho']?></p>
+    <?php if (!empty($_SESSION['erro_cadastro'])) { ?>
+        <div class="alert alert-danger" role="alert" id="mensagem_erro_cadastro">
+            <p><?=$_SESSION['erro_cadastro']?>
         </div>
+    <?php
+    }
+    unset($_SESSION['erro_cadastro']);
+    ?>
+    <div class="alert alert-secondary" role="alert">
+        <h4>Informações adicionais do registro</h4>
+        <hr>
+        <p>Formulário #<?=$_SESSION['id_formulario_preliminar']?></p>
+        <p>Empresa: <?=$_SESSION['razao_empresa']?></p>
+        <p>CNPJ: <?=$_SESSION['cnpj_empresa']?></p>
+        <p>Registro de trabalho(atividade): <?=$_SESSION['registro_trabalho']?></p>
+    </div>
+
 
     <form action='realizarRegistroFormularioTotal.php' method='post' enctype='multipart/form-data'>
 
-        <input type='hidden' name='id_formulario_preliminar' id='id_formulario_preliminar' readonly></input>
-
+        <input type='hidden' name='id_formulario_total' id='id_formulario_total' value="" readonly></input>
+        <input type='hidden' name='id_image_preliminar' id='id_image_preliminar' value="" readonly></input>
+        <input type='hidden' name='id_formulario_preliminar' id='id_formulario_preliminar' value="<?=$_SESSION['id_formulario_preliminar']?>" readonly></input>
+        <input type='hidden' name='registro_trabalho' id='registro_trabalho' value="<?=$_SESSION['registro_trabalho']?>" readonly></input>
+        
 
         <div id='analise_ergonomica' class='container_now container'>
                         
@@ -300,7 +320,7 @@ if (isset($_POST['registro_trabalho']) && !empty($_POST['registro_trabalho'])) {
                 </div>
                 <br>
 
-                <div class='form-control'>
+                <div class='form-control esconderNoPrint'>
                     <div class='class-perguntas'>
                         <div class='pergunta'>
                             <label>Foto do local onde a atividade é excercida</label>
@@ -320,21 +340,20 @@ if (isset($_POST['registro_trabalho']) && !empty($_POST['registro_trabalho'])) {
                     </div>
                     <div id='foto_local_atividade_ajuda' style='display: none;'>
                         <div class='alert alert-info' role='alert'>
-                            <p>* Campo Ajuda</p>
+                            <p>* É possível somente manter uma imagem por registro, caso você necessite alterar um registro já realizado, a imagem antiga será substituida pela nova imagem</p>
                         </div>
                     </div>
                 </div>
                 <br>
 
-                <div class='form-control' style="display: none;">
+                <div class='form-control' style="display: none;" id="apresentar_imagem_ja_cadastrada">
                     <div class='class-perguntas'>
-                        <div class='pergunta'>
-                            <label>Imagem já cadastrada</label>
+                        <div class='pergunta' style="margin:auto;">
+                            <h4 style="margin-top: 20px;">Imagem já cadastrada</h4>
+                            <hr>
+                            <img src="" style="width:auto;height:auto;"id="imagem_ja_cadastrada_valor">
                         </div>
                     </div>
-                    <div style='margin-top: 10px; margin-bottom: 10px;'>
-
-                    </div> 
                 </div>
 
             </div>
@@ -373,7 +392,7 @@ if (isset($_POST['registro_trabalho']) && !empty($_POST['registro_trabalho'])) {
                     </div> 
                     <div style='display: flex; margin-top: 10px; margin-bottom: 10px;'>
                         <select class='form-control' id='gradacao_respostas_mult_1' name='gradacao_respostas_mult_1' style='display: none;' required>
-                            <option value='' default>---</option>
+                            <option value='0' default>---</option>
                             <option value='5'>Quase certo</option>
                             <option value='4'>Provável</option>
                             <option value='3'>Improvável</option>
@@ -382,7 +401,7 @@ if (isset($_POST['registro_trabalho']) && !empty($_POST['registro_trabalho'])) {
                         </select>
 
                         <select class='form-control' id='gradacao_respostas_mult_2' name='gradacao_respostas_mult_2' style='display: none;'>
-                            <option value='' default>---</option>
+                            <option value='0' default>---</option>
                             <option value='1'>Exposição em níveis muito baixos (menor que 10% do LEO)</option>
                             <option value='2'>Exposição em níveis baixos (maior que 10% a 50% do LEO)</option>
                             <option value='3'>Exposição em níveis moderados (maior que  50% a 100% do LEO)</option>
@@ -391,7 +410,7 @@ if (isset($_POST['registro_trabalho']) && !empty($_POST['registro_trabalho'])) {
                         </select>
 
                         <select class='form-control' id='gradacao_respostas_mult_3' name='gradacao_respostas_mult_3' style='display: none;'>
-                            <option value='' default>---</option>
+                            <option value='0' default>---</option>
                             <option value='1'>menor que 1h</option>
                             <option value='2'>1-2h</option>
                             <option value='3'>2-4h</option>
@@ -479,8 +498,8 @@ if (isset($_POST['registro_trabalho']) && !empty($_POST['registro_trabalho'])) {
                 <br>
 
 
-                <div class="alert alert-primary" role="alert" style="display:none;" id="div_result_gradacao_respostas_mult" name="result_gradacao_respostas_mult">
-                    <input type="hidden" value="" name="result_gradacao_respostas_mult" id="result_gradacao_respostas_mult">
+                <div class="alert alert-primary" role="alert" style="display:none;" id="div_result_gradacao_respostas_mult" name="div_result_gradacao_respostas_mult">
+                    <input type="hidden" value="" name="result_gradacao_respostas_mult" id="result_gradacao_respostas_mult" required>
                     <h4>Resultado da classificação de risco</h4>
                     <hr>
                     <p id="msg_gradacao_respostas_mult"></p>
@@ -491,18 +510,25 @@ if (isset($_POST['registro_trabalho']) && !empty($_POST['registro_trabalho'])) {
     
         </div>
 
-        <div id='severidade_bio' class='container_now container'>
+        <div id='severidade_carga' class='container_now container' style="display:none;">
+            Necessita preencher "severidade_carga"
         </div>
 
-        <div id='severidade_cognitivo' class='container_now container'>
+        <div id='severidade_bio' class='container_now container' style="display:none;">
+            Necessita preencher "severidade_bio"
         </div>
 
-        <div id='severidade_ambiente' class='container_now container'>
+        <div id='severidade_cognitivo' class='container_now container'style="display:none;">
+            Necessita preencher "severidade_cognitivo"
         </div>
 
-        <div id='efeitos_corretivas' class='container_now container'>
+        <div id='severidade_ambiente' class='container_now container' style="display:none;">
+            Necessita preencher "severidade_ambiente"
         </div>
 
+        <div id='efeitos_corretivas' class='container_now container' style="display:none;">
+            Necessita preencher "efeitos_corretivas"
+        </div>
 
         <div id='container-msg' class='container_now container' style='display: none;'>
             <h4>Selecione um formulário para continuar a operação</h4>
@@ -512,7 +538,7 @@ if (isset($_POST['registro_trabalho']) && !empty($_POST['registro_trabalho'])) {
             <div class="container-fluid">
                 <p class="navbar-brand ajuste-left-nav">Clique aqui para enviar:</p>
                 <form class="d-flex">
-                    <button type='submit' class='btn btn-primary' id="submitFormulatorioTotal" name="submitFormulatorioTotal">Registro completo sobre a atividade</button>
+                    <button type='submit' class='btn btn-primary' id="submitFormulatorioTotal">Registro completo sobre a atividade</button>
                 </form>
             </div>
         </nav>
@@ -528,12 +554,12 @@ if (isset($_POST['registro_trabalho']) && !empty($_POST['registro_trabalho'])) {
 <script src="../js/jquery.mask.min.js"></script>
 <script>
 
-$('#submitFormulatorioTotal').on('click', function() {
+$('#submitFormulatorioTotal').on('click', function(event) {
     campos_requiridos = $('input,textarea,select').filter('[required]');
     for(i=0;i<=(campos_requiridos.length-1);i++) {
-        if (campos_requiridos[i].value == "") {
-            console.log(campos_requiridos[i].value);
+        if ((campos_requiridos[i].value == "") || (campos_requiridos[i].value == "0")) {
             $('#menuModalAvisoFaltaCampos').modal('show');
+            event.preventDefault();
             break;
         }
     }
@@ -615,10 +641,13 @@ $('#descricao_atividade').on('click', function() {
 //------------------------------------------------------------
 
 $('#gradacao_perguntas_mult_123').on('change', function() {
-    if (this.value == "") {
+    if (this.value == "0") {
         document.getElementById('gradacao_respostas_mult_1').style.display='none';
         document.getElementById('gradacao_respostas_mult_2').style.display='none';
         document.getElementById('gradacao_respostas_mult_3').style.display='none';
+        document.getElementById('gradacao_respostas_mult_1').value='0';
+        document.getElementById('gradacao_respostas_mult_2').value='0';
+        document.getElementById('gradacao_respostas_mult_3').value='0';
         document.getElementById('gradacao_respostas_mult_1').setAttribute("required", true);
         document.getElementById('gradacao_respostas_mult_2').removeAttribute("required");
         document.getElementById('gradacao_respostas_mult_3').removeAttribute("required");
@@ -626,6 +655,8 @@ $('#gradacao_perguntas_mult_123').on('change', function() {
         document.getElementById('gradacao_respostas_mult_1').style.display='flex';
         document.getElementById('gradacao_respostas_mult_2').style.display='none';
         document.getElementById('gradacao_respostas_mult_3').style.display='none';
+        document.getElementById('gradacao_respostas_mult_2').value='0';
+        document.getElementById('gradacao_respostas_mult_3').value='0';
         document.getElementById('gradacao_respostas_mult_1').setAttribute("required", true);
         document.getElementById('gradacao_respostas_mult_2').removeAttribute("required");
         document.getElementById('gradacao_respostas_mult_3').removeAttribute("required");
@@ -633,6 +664,8 @@ $('#gradacao_perguntas_mult_123').on('change', function() {
         document.getElementById('gradacao_respostas_mult_1').style.display='none';
         document.getElementById('gradacao_respostas_mult_2').style.display='flex';
         document.getElementById('gradacao_respostas_mult_3').style.display='none';
+        document.getElementById('gradacao_respostas_mult_1').value='0';
+        document.getElementById('gradacao_respostas_mult_3').value='0';
         document.getElementById('gradacao_respostas_mult_1').removeAttribute("required");
         document.getElementById('gradacao_respostas_mult_2').setAttribute("required", true);
         document.getElementById('gradacao_respostas_mult_3').removeAttribute("required");
@@ -640,6 +673,8 @@ $('#gradacao_perguntas_mult_123').on('change', function() {
         document.getElementById('gradacao_respostas_mult_1').style.display='none';
         document.getElementById('gradacao_respostas_mult_2').style.display='none';
         document.getElementById('gradacao_respostas_mult_3').style.display='flex';
+        document.getElementById('gradacao_respostas_mult_1').value='0';
+        document.getElementById('gradacao_respostas_mult_2').value='0';
         document.getElementById('gradacao_respostas_mult_1').removeAttribute("required");
         document.getElementById('gradacao_respostas_mult_2').removeAttribute("required");
         document.getElementById('gradacao_respostas_mult_3').setAttribute("required", true);
@@ -647,6 +682,9 @@ $('#gradacao_perguntas_mult_123').on('change', function() {
         document.getElementById('gradacao_respostas_mult_1').style.display='none';
         document.getElementById('gradacao_respostas_mult_2').style.display='none';
         document.getElementById('gradacao_respostas_mult_3').style.display='none';
+        document.getElementById('gradacao_respostas_mult_1').value='0';
+        document.getElementById('gradacao_respostas_mult_2').value='0';
+        document.getElementById('gradacao_respostas_mult_3').value='0';
         document.getElementById('gradacao_respostas_mult_1').setAttribute("required", true);
         document.getElementById('gradacao_respostas_mult_1').removeAttribute("required");
         document.getElementById('gradacao_respostas_mult_1').removeAttribute("required");
@@ -660,7 +698,7 @@ function loopConferValuesGradacaoRespostas() {
     var severidade = 0;
 
     
-    if (document.getElementById('gradacao_perguntas_mult_123').value == "") {
+    if (document.getElementById('gradacao_perguntas_mult_123').value == "0") {
         document.getElementById('div_result_gradacao_respostas_mult').style.display="none";
         return
     }
@@ -688,14 +726,14 @@ function loopConferValuesGradacaoRespostas() {
         return
     }
 
-    if (document.getElementById('gradacao_respostas_mult_4').value != "") {
+    if (document.getElementById('gradacao_respostas_mult_4').value != "0") {
         severidade += parseInt(document.getElementById('gradacao_respostas_mult_4').value);
     } else {
         document.getElementById('div_result_gradacao_respostas_mult').style.display="none";
         return
     }
 
-    if (document.getElementById('gradacao_respostas_mult_5').value != "") {
+    if (document.getElementById('gradacao_respostas_mult_5').value != "0") {
         severidade += parseInt(document.getElementById('gradacao_respostas_mult_5').value);
     } else {
         document.getElementById('div_result_gradacao_respostas_mult').style.display="none";
@@ -757,16 +795,22 @@ function loopConferValuesGradacaoRespostas() {
 
     var msg_return = "";
     if (msg_apresentar == 1) {
+        document.getElementById('result_gradacao_respostas_mult').value=1;
         msg_return = "Muito baixa probabilidade de risco ergonômico (0 a 20%)";
     } else if (msg_apresentar == 2) {
+        document.getElementById('result_gradacao_respostas_mult').value=2;
         msg_return = "Baixa probabilidade de risco ergonômico (>20 a 40 %)";
     } else if (msg_apresentar == 3) {
+        document.getElementById('result_gradacao_respostas_mult').value=3;
         msg_return = "Moderada probabilidade de risco ergonômico (>40 a 60%)";
     } else if (msg_apresentar == 4) {
+        document.getElementById('result_gradacao_respostas_mult').value=4;
         msg_return = "Alta probabilidade de risco ergonômico (>60 a 80%)";
     } else if (msg_apresentar == 5) {
+        document.getElementById('result_gradacao_respostas_mult').value=5;
         msg_return = "Probabilidade em nível crítico de risco ergonômico (>80 a 100%)";
     } else {
+        document.getElementById('result_gradacao_respostas_mult').value='';
         document.getElementById('div_result_gradacao_respostas_mult').style.display="none";
         return
     }
@@ -793,12 +837,56 @@ setTimeout(() => {
     loopFunctionsAll();
 }, 1000);
 
-
-
-
-
+function imprimirFormulario() {
+    document.getElementById("frequencia_p_cada_perigo").style.display="block";
+    document.getElementById("severidade_carga").style.display="block";
+    document.getElementById("severidade_bio").style.display="block";
+    document.getElementById("severidade_cognitivo").style.display="block";
+    document.getElementById("severidade_ambiente").style.display="block";
+    document.getElementById("efeitos_corretivas").style.display="block";
+    document.getElementById("analise_ergonomica").style.display="block";
+    print();
+    document.getElementById("frequencia_p_cada_perigo").style.display="block";
+    document.getElementById("severidade_carga").style.display="none";
+    document.getElementById("severidade_bio").style.display="none";
+    document.getElementById("severidade_cognitivo").style.display="none";
+    document.getElementById("severidade_ambiente").style.display="none";
+    document.getElementById("efeitos_corretivas").style.display="none";
+    document.getElementById("analise_ergonomica").style.display="none";
+}
 
 </script>
+
+<?php
+    $chamadaProcura = "select * from registro_total where id_formulario_preliminar = '{$_SESSION['id_formulario_preliminar']}' and registro_trabalho = '{$_SESSION['registro_trabalho']}' limit 1;";
+    $busca = mysqli_query($conexao_banco, $chamadaProcura);
+    if (mysqli_num_rows($busca) > 0) {
+        ?><script>document.getElementById("imprimirFormulario").style.display="block";</script><?php
+        foreach (mysqli_fetch_array($busca) as $chave => $valor) {
+            ?>
+            <?php
+           if ($valor != "0") {
+                ?>
+                <script>
+                if (!!document.getElementById("<?=$chave?>")) {
+                    if ("id_image_preliminar" == "<?=$chave?>") {
+                        document.getElementById("<?=$chave?>").setAttribute("required", true);
+                        document.getElementById("<?=$chave?>").value="<?=$valor?>";
+                        document.getElementById("foto_local_atividade").removeAttribute("required");
+                        document.getElementById("apresentar_imagem_ja_cadastrada").style.display="block";
+                        document.getElementById("imagem_ja_cadastrada_valor").src="<?=$valor?>";
+                    } else {
+                        document.getElementById("<?=$chave?>").style.display="block";
+                        document.getElementById("<?=$chave?>").setAttribute("required", true);
+                        document.getElementById("<?=$chave?>").value="<?=$valor?>";
+                    }
+                }
+                </script>
+                <?php
+            }
+        };
+    }
+?>
 
 
 </body>

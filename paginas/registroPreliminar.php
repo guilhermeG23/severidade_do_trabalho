@@ -159,6 +159,7 @@ Note: Falta fazer
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <form class="d-flex">
                 <a class='dropdown-item' href='./perfil.php'><img src='../imagens/user.png' class='img'/></a>
+                <a class='dropdown-item' href='./perfil.php'><img src='../imagens/todos-registros.png' class='img'/></a>
                 <a class='dropdown-item' data-bs-toggle="modal" data-bs-target="#menuModalHelp"><img src='../imagens/help.png' class='img'/></a>
                 <a class='dropdown-item' href='./logout.php'><img src='../imagens/logout.png' class='img'/></a>
             </form>
@@ -578,7 +579,7 @@ Note: Falta fazer
                                 <ul style='list-style: unset;'>
                                     <li>Somente o primeiro campo é obrigatório;</li>
                                     <li>Caso o campo for preenchido e foi feito um registro, o mesmo será mostrado na tela de registro sobre este formulário;</li>
-                                    <li>Caso queira deletar um determinado registro, é necessário entrar no perfil -> Selecionar o formulário determinado -> Deletar o registro preliminar;</li>
+                                    <li>Deixo ciente que, caso um valor deste ponto seja apagado e o mesmo tenha um formulário já registrado, o mesmo será perdido, já que fica subentendido que como não existe, mais está função, o formulário já registrado se torna descartavel, dessa forma, cuidado ao deletar totalmente o conteudo deste campo e registrar as alterações, uma vez realizado e se existir um formulário, o mesmo será perdido definitivamente.</li>
                                 </ul>
                             </div>
                         </div>
