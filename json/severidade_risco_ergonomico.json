@@ -1,0 +1,687 @@
+{
+    "titulo": "Caracterização da severidade do risco ergonômico - Fatores Biomecânicos e Posturais",
+    "subtitulo": ["Perigos possíveis"],
+    "chave_base": "severidadeProb",
+    "todas_questoes" : [{
+            "desc": ["Necessidade de aplicação de força corporal", "Força/Fadigas"],
+            "questoes": [
+                {
+                    "id": "1_1",
+                    "questao": ["O trabalho faz nítido esforço com mãos e braços?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_2",
+                    "questao": ["O trabalho faz nítido esforço com pernas e pés?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_3",
+                    "questao": ["O trabalho faz nítido esforço com tronco, pescoço e cabeça?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_4",
+                    "questao": ["Esforço supra-máximo (força intensa), ou extremo ou feito aos arrancos?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_5",
+                    "questao": ["Há mudança de expressão facial?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_6",
+                    "questao": ["Usa tronco, ombros e/ou outros grupamentos musculares?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_7",
+                    "questao": ["Força maior que 20 vezes por minuto?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_8",
+                    "questao": [" A força dura mais que 49% do ciclo e acontece mais que 8 vezes por minuto?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_9",
+                    "questao": ["Há exigência de uso frequente de força, pressão, preensão, flexão, extensão ou torção dos segmentos corporais?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_10",
+                    "questao": ["Utiliza o peso do corpo para obter a força necessária ao cumprimento da atividade de trabalho?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_11",
+                    "questao": ["Há frequente ação de puxar e/ou empurrar cargas ou volumes?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_12",
+                    "questao": ["Há frequente ação de agarrar, segurar e/ou apanhar peças, objetos ou ferramentas?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_13",
+                    "questao": ["O trabalhador caminha ou corre carregando cargas?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_14",
+                    "questao": ["Há uso frequente de pedais e alavancas?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        },{
+            "desc": ["Sobrecarga osteomuscular (através das queixas do trabalhador)", "Avaliação das queixas dos trabalhadores", "Entrevistar o trabalhador:", "Para as próximas perguntas, entenda como dor: dor, formigamento, dormência ou impedimento de realizar alguma atividade com a parte do corpo citada."],
+            "questoes": [
+                {
+                    "id": "1_15",
+                    "questao": ["Você sentiu dores no pescoço nos últimos 6 meses?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_16",
+                    "questao": ["Você sentiu dores nos ombros nos últimos 6 meses?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_17",
+                    "questao": ["Você sentiu dores na parte superior das costas nos últimos 6 meses?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_18",
+                    "questao": ["Você sentiu dores na parte inferior das costas nos últimos 6 meses?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_19",
+                    "questao": ["Você sentiu dores nos cotovelos nos últimos 6 meses?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_20",
+                    "questao": ["Você sentiu dores nos punhos e/ou mãos nos últimos 6 meses?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_21",
+                    "questao": ["Você sentiu dores no quadril e/ou coxas nos últimos 6 meses?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_22",
+                    "questao": ["Você sentiu dores nos joelhos nos últimos 6 meses?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_23",
+                    "questao": ["Você sentiu dores nos tornozelos/pés nos últimos 6 meses?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_24",
+                    "questao": ["Precisou de atendimento médico por sentir dores ou desconforto físco nos últimos 6 meses?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_25",
+                    "questao": ["O trabalhador já precisou pausar a atividade devido ao cansaço ou mal-estar?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_26",
+                    "questao": ["O trabalhador já precisou faltar ao trabalho ou ficar afastado da atividade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Levantamento, transporte e descarga individual de cargas pesadas", "Valores de levantamento de cargas"],
+            "questoes": [
+                {
+                    "id": "1_27",
+                    "questao": ["Homens entre 18 e 45 anos"],
+                    "respostas": [["3", "Maior que 60kg"], ["2", "entre que 25kg e 60kg"],["1", "menor que 25kg"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_28",
+                    "questao": ["Homens menor 18 e maior 45 anos"],
+                    "respostas": [["3", "Maior que 60kg"], ["2", "entre que 25kg e 60kg"],["1", "menor que 25kg"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_29",
+                    "questao": ["Mulheres entre 18 e 45 anos: "],
+                    "respostas": [["3", "Maior que 20kg"], ["2", "Menor que 20kg"],["1", "Menor que 5kg"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },                
+                {
+                    "id": "1_30",
+                    "questao": ["Mulheres menor 18 e maior 45 anos"],
+                    "respostas": [["3", "Maior que 15kg"], ["2", "Menor que 5 a 15kg"],["1", "Menor que 5kg"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Levantamento, transporte e descarga individual com postura inadequada", "Sobre o levantamento, transporte, de cargas:"],
+            "questoes": [
+                {
+                    "id": "1_31",
+                    "questao": [" A movimentação de carga acontece na posição em pé, em posição forçada de coluna? "],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_32",
+                    "questao": ["O trabalho é realizado em pé, tendo que horizontalizar os braços e antebraços ao movimentar a carga?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_33",
+                    "questao": ["O trabalho de movimentação de carga é realizado com as mãos posicionadas acima da linha dos ombros? "],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_34",
+                    "questao": ["Há ação de puxar e/ou empurrar cargas ou volumes?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_35",
+                    "questao": ["Há manipulação de objetos com massa superior a 3kg?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_36",
+                    "questao": ["O trabalhador caminha ou corre carregando cargas?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_37",
+                    "questao": ["Pergunta obrigatória. Se a resposta for sim, severidade em nível crítico"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_38",
+                    "questao": ["Para o levantamento não eventual de cargas, a distância de alcance horizontal da pega é superior a 60 cm (sessenta centímetros) em relação ao corpo?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Manuseio de ferramentas e/ou objetos pesados por períodos prolongados", "Responda:"],
+            "questoes": [
+                {
+                    "id": "1_39",
+                    "questao": ["A posição de pinça (pulpar, lateral ou palmar) é utilizada para fazer força?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_40",
+                    "questao": ["O trabalhador tem que movimentar, com as mãos, peso acima de 1 Kg em posição de pinça, como rotina em sua atividade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_41",
+                    "questao": ["O trabalhador tem que movimentar, com as mãos, peso acima de 3 Kg em pressão palmar como rotina em sua atividade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_42",
+                    "questao": ["A atividade exige alta precisão de movimentos?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_43",
+                    "questao": ["Há necessidade do uso de luva e, consequentemente, o trabalhador precisa fazer mais força?", "Com qual facilidade o trabalhador pega os objetos (peças, ferramentas, por exemplo)?"],
+                    "respostas": [["1", "Com grande facilidade, pega boa."], ["2", "A pega é razoável, ou seja,  o formato, o tamanho e a textura podem dificultar."], ["3", "Com dificuldade, a pega é ruim."]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Levantamento, movimentação e transporte de carga humana", "Carga Humana:"],
+            "questoes": [
+                {
+                    "id": "1_44",
+                    "questao": ["Há levantamento, movimentação e/ou transporte de carga humana frequentes durante a jornada de trabalho?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_45",
+                    "questao": ["O trabalho de movimentação e transporte de carga humana é realizado de forma individual?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_46",
+                    "questao": ["Existem procedimentos estabelecidos e seguros de movimentação e transporte de carga humana?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_46",
+                    "questao": ["Existem procedimentos estabelecidos e seguros de movimentação e transporte de carga humana?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_47",
+                    "questao": ["A pessoa utiliza ou está utilizando cateteres ou outros equipamentos?", "Peso da carga humana"],
+                    "respostas": [["1", "Até 50 Kg "], ["2", "51 a 69 Kg "], ["3", "Mais de 70 Kg"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_48",
+                    "questao": ["Condição de mobilidade da carga humana (mais frequente)"],
+                    "respostas": [["1", "Parcialmente dependente"], ["2", "Totalmente dependente"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_49",
+                    "questao": ["Nível de Consciência da pessoa"],
+                    "respostas": [["1", "Alerta/Normal"], ["2", "Confusão/Letargia"], ["3", "Inconsciência/Agitação"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Exigência de posturas incômodas ou pouco confortáveis ", "Questões gerais, considerando a(s) postura(s) adotadas pelo trabalhador:"],
+            "questoes": [
+                {
+                    "id": "1_50",
+                    "questao": [" Há exigência de posturas incômodas ou pouco confortáveis por longos períodos?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_51",
+                    "questao": ["O trabalhador consegue manter uma postura adequada durante o trabalho?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_52",
+                    "questao": ["O trabalhador torce o troco ou fica com o troco inclinado para frente na execução da tarefa?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_53",
+                    "questao": ["As pernas do trabalhador ficam suspensas?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_54",
+                    "questao": ["O trabalhador executa a atividade com um braço ou os dois braços levantados?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_55",
+                    "questao": ["O trabalhador alcança com facilidade as peças, mobiliários, ferramentas ou qualquer outro objeto necesssário para a execução da atividade?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_56",
+                    "questao": [" Há exigência de uso frequente de força, pressão, preensão, flexão, extensão ou torção dos segmentos corporais?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },                
+                {
+                    "id": "1_57",
+                    "questao": [" Há compressão de partes do corpo por superfícies rígidas ou com quinas?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_58",
+                    "questao": [" O trabalhador não consegue apoiar, totalmente, os dois pés no chão na execução da atividade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_59",
+                    "questao": [" É possível a alternância de postura sempre que necessário?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Posturas Dinâmicas"],
+            "questoes": [
+                {
+                    "id": "1_60",
+                    "questao": ["Existe espaço adequado para alternância de postura e execução dos movimentos necessários para a tarefa?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_61",
+                    "questao": ["Há frequente ação de puxar e/ou empurrar cargas ou volumes?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_62",
+                    "questao": [" Há constantes deslocamentos em pé durante a jornada?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_63",
+                    "questao": [" O trabalhador precisa estar agachado, ajoelhado, ajoelhado com o troco encurvado para frente, agachado com membro superior acima do nível dos ombros e outras posições não convencionais para a realização da atividade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_64",
+                    "questao": ["O trabalhador sobre e desce escadas ou rampas durante a execução da atividade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_65",
+                    "questao": ["O trabalhador realiza a atividade em espaços confinados?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_66",
+                    "questao": ["O trabalhador realiza a atividade em altura e fica suspenso durante a atividade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_67",
+                    "questao": ["O trabalhador realiza a atividade sob pressão hiperbárica?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_68",
+                    "questao": ["Há  movimentos bruscos de impacto dos membros superiores na execução da atividade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_69",
+                    "questao": ["As posturas e movimentos realizados na atividade desequilibram o trabalhador?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Posturas Estáticas"],
+            "questoes": [
+                {
+                    "id": "1_70",
+                    "questao": ["O trabalhador fica em pé por longos períodos, sem se movimentar?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_71",
+                    "questao": ["O trabalhador fica sentado por longos períodos?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_72",
+                    "questao": ["Há pouca ou nenhuma mudança de postura nas posições dos membros superiores?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_73",
+                    "questao": ["Há pouca ou nenhuma mudança de postura nas posições dos membros inferiores?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }, {
+            "desc": ["Repetividade elevada"],
+            "questoes": [
+                {
+                    "id": "1_74",
+                    "questao": ["A atividade é realizada em ciclos?"],
+                    "respostas": [["1", "Não."], ["2", "Sim, com gestos iguais entre 51% e 80% do tempo ou duração de ciclo entre 8 a 15 segundos."], ["3", "Sim, com gestos iguais entre > 80% do tempo ou duração de ciclo entre 1 a 7 segundos."]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_75",
+                    "questao": ["Se sim, o ciclo é menor que 30 segundos?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_76",
+                    "questao": ["Se sim, existe algum movimento que é repetido por mais de 3000 vezes por turno?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_77",
+                    "questao": ["Se sim, entre um ciclo e outro, há possibilidade de um pequeno descanso?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_78",
+                    "questao": ["Se sim, percebem-se sinais de que o trabalhador está com o tempo apertado para realizar a atividade?"],
+                    "respostas": [["1", "Sim"], ["0", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                },
+                {
+                    "id": "1_79",
+                    "questao": ["Se sim, Há rodízio na atividade, com alternância de postura e movimentos?"],
+                    "respostas": [["0", "Sim"], ["1", "Não"]],
+                    "ajuda": "",
+                    "obrigatorio": "",
+                    "tipo_campo": ""
+                }
+            ]
+        }
+    ]
+}
